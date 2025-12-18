@@ -17,6 +17,12 @@ namespace HomagGroup.Blazor3D.Materials
         }
 
         /// <summary>
+        /// <para>Color unaffected by lighting. Default is black but set to white for testing.</para>
+        /// </summary>
+#if NOTYET
+        public string Emissive { get; set; } = "white";
+#endif // NOT_YET
+        /// <summary>
         /// <para>Define whether the material is rendered with flat shading. Default is false.</para>
         /// </summary>
         public bool FlatShading { get; set; } = false;
